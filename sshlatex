@@ -492,7 +492,7 @@ while :; do
                     # No check needed; simply use the current header.
                     echo "\input{_sshlatex_header-next.tex}\input{_sshlatex_main.tex}"
                 fi
-            } | pdflatex -jobname "$LC_FILE" >&2
+            } | pdflatex --shell-escape -jobname "$LC_FILE" >&2
             exitstatus="$?"
 
             mv _sshlatex_header-next.tex _sshlatex_header.tex
