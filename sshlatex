@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Usage: sshlatex ssh.example.org foo.tex
 
 # For passing some kinds of data, for instance file names, to the remote host,
